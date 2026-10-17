@@ -1,0 +1,77 @@
+.boot-screen {
+    position: fixed;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background-color: black;
+    place-items: center;
+    inset: 0;
+    z-index: 999;
+    display: grid;
+    transition: opacity 800ms ease;
+    
+}
+.boot-screen[hidden] {
+    display: none !important;
+}
+
+.boot-logo {
+    width: 200px;
+    object-fit: contain;
+    filter:
+        drop-shadow(0 0 10px #00aaff) drop-shadow(0 0 28px #006eff);
+    animation: logo-glow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes logo-glow {
+    from {
+        filter: drop-shadow(0 0 8px #ffffff50);
+    }
+
+    to {
+        filter:
+            drop-shadow(0 0 16px #fcfefe75) drop-shadow(0 0 30px #f7f7f8);
+    }
+}
+
+.boot-content h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 300;
+    text-shadow: 0 0 18px #008cff;
+}
+
+.boot-tagline {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.startup-menu {
+    position: fixed;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background-color: black;
+    place-items: center;
+    inset: 0;
+ 
+    display: grid;
+  
+}
+
+.startup-card {
+    
+    background-image: url("/Savage-Shark/assets/IMG1.png");
+    background-color: rgba(255, 0, 0, 0.247);
+}
+
+.startup-card img {
+    
+width: 100px;
+}
+
+
+
+.desktop[hidden] {
+    display: none;
+}
