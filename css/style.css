@@ -60,9 +60,9 @@
 }
 
 .startup-card {
-    
+    display: flex;
     background-image: url("/Savage-Shark/assets/IMG1.png");
-    background-color: rgba(255, 0, 0, 0.247);
+    background-color: rgba(57, 55, 55, 0.247);
 }
 
 .startup-card img {
