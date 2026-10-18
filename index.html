@@ -10,46 +10,89 @@
 </head>
 
 <body>
-    
-        <section class="boot-screen" id="bootScreen">
-            <div class="boot-content">
+    <section class="selection-screen">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="default.asp">Home</a></li>
+                    <li><a href="news.asp">News</a></li>
+                    <li><a href="contact.asp">Contact</a></li>
+                    <li><a href="about.asp">About</a></li>
+                </ul>
+            </nav>
+            <label>
+                <input type="radio" name="formatOption" value="suara" checked>
+                <span>Play the animated tour that features text, animation, music, and voice narration.</span>
+            </label>
+        </div>
+        <div>
 
-                <img src="assets/AllNewIcon.png" alt="" class="boot-logo">
-                <h1>FathanOS 7</h1>
-                
-                <p class="boot-tagline">new era of computing</p>
+            <label>
+                <input type="radio" name="formatOption" value="bisu" >
+                <span>Play the non-animated tour that features text and images only.</span>
+            </label>
+            <button onclick="playprogram();
+" ontouchend="playprogram();
+">Next</button>
+        </div>
+    </section>
+
+    <section class="boot-screen" id="bootScreen" hidden>
+        <div class="boot-content">
+
+            <img src="assets/AllNewIcon.png" alt="" class="boot-logo">
+            <h1>FathanOS 7</h1>
+
+            <p class="boot-tagline">new era of computing</p>
 
 
 
-                <p class="boot-message" id="boot-message">Starting system</p>
 
-            </div>
-        </section>
-        <section class="startup-menu" id="startup-menu" hidden>
-            <div class="startup-card">
-                <img src="assets/AllNewIcon.png" alt="" class="menu-logo">
-                <p>dsd</p>
-                <button>try</button>
-                </img>
-            </div>
+            <p class="boot-message" id="boot-message">Starting system</p>
 
-        </section>
-        <main class="desktop" hidden>
-        <!-- <header class="topbar">
+        </div>
+    </section>
+    <sction class="video-screen" id="video-screen" hidden>
+        <video id="intro-video" autoplay playsinline control preload="auto">
+            <source src="assets/result.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </sction>
+    <section class="startup-menu" id="startup-menu" hidden>
+        <div class="startup-card">
+            <p>EnvyOS</p>
+            <hr>
+
+            <img src="assets/AllNewIcon.png" alt="" class="menu-logo">
+            <hr>
+            <p>dsd</p>
+            <button id="try-button">try</button>
+            </img>
+            <footer>
+                <hr>
+                <p>© 2026 Fathan. All rights reserved.</p>
+            </footer>
+        </div>
+
+    </section>
+    <main class="desktop" hidden>
+        <header class="topbar">
             <div class="brand">
 
                 <span>Savage Shark OS</span>
 
             </div>
+            <p>© 2026 Fathan. All rights reserved.</p>
         </header>
         <footer>
-            <button class="dock-item" id="home-button"> 
-                    <img src="/Savage-Shark/assets/AllNewIcon.png" alt="">
+            <button class="dock-item" id="home-button">
+                <img src="/Savage-Shark/assets/AllNewIcon.png" alt="">
             </button>
-        </footer> -->
+        </footer>
 
     </main>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
