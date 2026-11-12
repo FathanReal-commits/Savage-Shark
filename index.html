@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="selection-screen">
+    <section class="selection-screen" hidden>
         <div>
             <nav>
                 <ul>
@@ -61,7 +61,7 @@
         </video>
     </section>
 
-    <section class="startup-menu" id="startup-menu" hidden>
+    <section class="startup-menu" class="fj-card__content" id="startup-menu" hidden >
         <div class="startup-card">
             <p>EnvyOS</p>
             <hr>
@@ -69,7 +69,7 @@
             <img src="assets/AllNewIcon.png" alt="" class="menu-logo">
             <hr>
             <p>dsd</p>
-            <button id="try-button">try</button>
+            <button id="try-button" >try</button>
             
             <footer>
                 <hr>
@@ -78,9 +78,10 @@
         </div>
 
     </section>
-    <main class="desktop" hidden>
+    <section class="desktop" >
         <header class="topbar">
             <div class="brand">
+               
 
                 <span>Savage Shark OS</span>
 
@@ -88,12 +89,16 @@
             <p>© 2026 Fathan. All rights reserved.</p>
         </header>
         <footer>
-            <button class="dock-item" id="home-button">
+            <button class="taskbar" id="home-button">
                 <img src="assets/AllNewIcon.png" alt="">
+                Start
             </button>
+            <div class="taskbar-apps">
+
+            </div>
         </footer>
 
-    </main>
+    </section>
     <script src="js/script.js"></script>
 
 </body>

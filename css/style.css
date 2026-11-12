@@ -1,3 +1,4 @@
+@import "7.css/dist/7.css";
 .boot-screen {
     position: fixed;
     text-align: center;
@@ -81,7 +82,11 @@
     inset: 0;
     /* background-image: url("../assets/IMG1.png"); */
     display: grid;
-    background-color: #006eff;
+    background-image: url(/assets/DSCN2818.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 
 }
 
@@ -96,8 +101,7 @@
     background: rgba(255, 255, 255, 0.66);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -120,5 +124,25 @@
 .desktop[hidden] {
     display: none;
 }
+.desktop {
+    position: fixed;
+    background-image: url(/assets/DSCN2818.JPG);
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
 
+.taskbar {
+    position: absolute;
+    height: 60px;
+    align-items: center;
+}
+
+.topbar {
+    background-color: #f3f2f160;
+    display: flex;
+}
 
