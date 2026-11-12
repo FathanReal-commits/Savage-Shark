@@ -67,11 +67,9 @@
     object-fit: contain;
 }
 
-.startup-menu[hidden]{
- display: none;
-
+.startup-menu[hidden] {
+    display: none !important;
 }
-
 
 .startup-menu {
     position: fixed;
@@ -81,8 +79,9 @@
 
     place-items: center;
     inset: 0;
-    background-image: url("../assets/IMG1.png");
+    /* background-image: url("../assets/IMG1.png"); */
     display: grid;
+    background-color: #006eff;
 
 }
 

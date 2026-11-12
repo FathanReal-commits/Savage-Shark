@@ -28,12 +28,13 @@
         <div>
 
             <label>
-                <input type="radio" name="formatOption" value="bisu" >
+                <input type="radio" name="formatOption" value="bisu">
                 <span>Play the non-animated tour that features text and images only.</span>
             </label>
-            <button onclick="playprogram();
-" ontouchend="playprogram();
-">Next</button>
+<button onclick="mulaiSistem()" ontouchend="mulaiSistem()">
+    Mainkan dengan Suara
+</button>
+
         </div>
     </section>
 
@@ -52,12 +53,14 @@
 
         </div>
     </section>
-    <sction class="video-screen" id="video-screen" hidden>
-        <video id="intro-video" autoplay playsinline control preload="auto">
+      <section class="video-screen" id="video-screen" hidden>
+        <!-- ID diubah menjadi myMedia agar singkron dengan JavaScript, autoplay dihapus -->
+        <video id="myMedia" playsinline  muted preload="auto" style="width: 100%; height: 100%;">
             <source src="assets/result.mp4" type="video/mp4">
             Your browser does not support video playback.
         </video>
-    </sction>
+    </section>
+
     <section class="startup-menu" id="startup-menu" hidden>
         <div class="startup-card">
             <p>EnvyOS</p>
@@ -67,7 +70,7 @@
             <hr>
             <p>dsd</p>
             <button id="try-button">try</button>
-            </img>
+            
             <footer>
                 <hr>
                 <p>© 2026 Fathan. All rights reserved.</p>
@@ -86,7 +89,7 @@
         </header>
         <footer>
             <button class="dock-item" id="home-button">
-                <img src="/Savage-Shark/assets/AllNewIcon.png" alt="">
+                <img src="assets/AllNewIcon.png" alt="">
             </button>
         </footer>
 
