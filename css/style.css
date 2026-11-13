@@ -1,4 +1,8 @@
 @import "7.css/dist/7.css";
+
+.body {
+    font-family: sans-serif;
+}
 .boot-screen {
     position: fixed;
     text-align: center;
@@ -124,10 +128,11 @@
 .desktop[hidden] {
     display: none;
 }
+
 .desktop {
     position: fixed;
     background-image: url(/assets/DSCN2818.JPG);
-        background-size: cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
@@ -139,10 +144,13 @@
     position: absolute;
     height: 60px;
     align-items: center;
+    background-color: #008cff;
+      display: flex;
 }
+
 
 .topbar {
-    background-color: #f3f2f160;
+    background-color: #00000060;
     display: flex;
+    color: #f7f7f8;
 }
-

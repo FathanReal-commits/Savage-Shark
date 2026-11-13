@@ -2,6 +2,12 @@ const bootScreen = document.querySelector("#bootScreen");
 const bootmessage = document.querySelector("#boot-message");
 const startupMenu = document.querySelector("#startup-menu");
 const desktop = document.querySelector(".desktop");
+import { setTheme } from '@fluentui/web-components';
+import { webLightTheme } from '@fluentui/tokens';
+import '@fluentui/web-components/button.js';
+
+// Mengatur tema terang bawaan Microsoft
+setTheme(webLightTheme);
 
 // 1. FUNGSI UTAMA: Dipanggil saat tombol pertama diklik
 function mulaiSistem() {
