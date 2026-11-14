@@ -2,42 +2,39 @@ const bootScreen = document.querySelector("#bootScreen");
 const bootmessage = document.querySelector("#boot-message");
 const startupMenu = document.querySelector("#startup-menu");
 const desktop = document.querySelector(".desktop");
-import { setTheme } from '@fluentui/web-components';
-import { webLightTheme } from '@fluentui/tokens';
-import '@fluentui/web-components/button.js';
 
-// Mengatur tema terang bawaan Microsoft
-setTheme(webLightTheme);
 
-// 1. FUNGSI UTAMA: Dipanggil saat tombol pertama diklik
+
+
+
 function mulaiSistem() {
-    // Sembunyikan layar pilihan format di awal
+    
     document.querySelector(".selection-screen").hidden = true;
 
-    // LANGKAH PENTING: Pancing izin suara browser secara kilat (Play lalu langsung Pause)
+ 
     pancingIzinSuara();
 
-    // Jalankan animasi teks booting (memakan waktu ~5 detik)
+  
     playprogram();
 }
 
-// 2. FUNGSI PANCINGAN: Mengunci izin suara tanpa membiarkan video berjalan dulu
+
 function pancingIzinSuara() {
     const media = document.getElementById('myMedia');
     const pilihan = document.querySelector('input[name="formatOption"]:checked').value;
 
-    // Nyalakan suara sejak awal jika user memilih opsi "suara"
+   
     if (pilihan === "suara") {
         media.muted = false;
     } else {
         media.muted = true;
     }
 
-    // Putar video secara kilat untuk merekam interaksi pengguna di sistem peramban
+   
     media.play().then(() => {
-        // DETIK ITU JUGA: Langsung hentikan video agar tidak mencuri start saat booting
+       
         media.pause(); 
-        media.currentTime = 0; // Kembalikan posisi video ke detik ke-0 (paling awal)
+        media.currentTime = 0; 
         console.log("Izin suara Chrome/Safari berhasil dikunci! Video dikembalikan ke awal.");
     }).catch(error => {
         console.log("Browser menolak pancingan suara:", error);
@@ -45,7 +42,6 @@ function pancingIzinSuara() {
     });
 }
 
-// 3. FUNGSI BOOTING: Animasi teks loading
 function playprogram() {
     bootScreen.hidden = false;
 
@@ -110,3 +106,7 @@ document.querySelector("#try-button").addEventListener("click", () => {
     startupMenu.hidden = true;
     desktop.hidden = false;
 });
+
+
+const startButton = document.querySelector("")
+const statMenu = document.querySelector("")
