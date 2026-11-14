@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savage Shark l</title>
     <link rel="stylesheet" href="css/style.css">
-     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
     <section class="selection-screen" hidden>
         <div>
-            <nav>
+            <nav class="s-nav">
+                <h1>FAMULATOR Wireless</h1>
                 <ul>
                     <li><a href="default.asp">Home</a></li>
                     <li><a href="news.asp">News</a></li>
@@ -35,9 +33,9 @@
                 <input type="radio" name="formatOption" value="bisu">
                 <span>Play the non-animated tour that features text and images only.</span>
             </label>
-<button onclick="mulaiSistem()" ontouchend="mulaiSistem()">
-    Mainkan dengan Suara
-</button>
+            <button onclick="mulaiSistem()" ontouchend="mulaiSistem()">
+                Mainkan dengan Suara
+            </button>
 
         </div>
     </section>
@@ -57,15 +55,15 @@
 
         </div>
     </section>
-      <section class="video-screen" id="video-screen" hidden>
+    <section class="video-screen" id="video-screen" hidden>
         <!-- ID diubah menjadi myMedia agar singkron dengan JavaScript, autoplay dihapus -->
-        <video id="myMedia" playsinline  muted preload="auto" style="width: 100%; height: 100%;">
+        <video id="myMedia" playsinline muted preload="auto" style="width: 100%; height: 100%;">
             <source src="assets/result.mp4" type="video/mp4">
             Your browser does not support video playback.
         </video>
     </section>
 
-    <section class="startup-menu" class="fj-card__content" id="startup-menu" hidden >
+    <section class="startup-menu" class="fj-card__content" id="startup-menu" hidden>
         <div class="startup-card">
             <p>EnvyOS</p>
             <hr>
@@ -73,9 +71,9 @@
             <img src="assets/AllNewIcon.png" alt="" class="menu-logo">
             <hr>
             <p>dsd</p>
-            <button id="try-button" >try</button>
-            <fluent-button appearance="primary">Start</fluent-button>
-            
+            <button id="try-button">try</button>
+
+
             <footer>
                 <hr>
                 <p>© 2026 Fathan. All rights reserved.</p>
@@ -84,29 +82,55 @@
 
     </section>
     <section class="desktop" >
-        <header class="topbar">
-            <div class="brand">
-               
+        <section class="sidebar">
 
-                <span>Savage Shark OS</span>
 
-            </div>
+
+            <span>Savage Shark OS</span>
+
+
             <p>© 2026 Fathan. All rights reserved.</p>
-        </header>
-        <footer class="taskbar" >
+        </section>
+        <footer class="taskbar">
             <button id="home-button" class="">
-               
+
                 Start
             </button>
             <div class="taskbar-apps">
 
             </div>
-               <div class="system-tray">
-     
-      <span>ID</span>
-      <span>22:30</span>
-    </div>
+            <div class="system-tray">
+
+                <span>ID</span>
+                <span>22:30</span>
+            </div>
         </footer>
+        <section class="start-menu" id="start-menu" hidden>
+            <div class="start-menu-1">
+                <h2>User</h2>
+                <ul>
+                    <li>Office</li>
+                    <li>Office</li>
+                    <li>Office</li>
+                    <li>Office</li>
+                    <li>Office</li>
+                    <li>Office</li>
+                </ul>
+                <img src="/assets/Waveing_flag.gif" alt="">
+
+            </div>
+            <div class="taskbar-menu-apps">
+                <ul>
+                    <li>Office</li>
+                </ul>
+                <button>Settings</button>
+                <button>Help</button>
+                <button>Power</button>
+            </div>
+
+            </div>
+
+        </section>
 
     </section>
     <script src="js/script.js"></script>

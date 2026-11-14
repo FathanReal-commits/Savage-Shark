@@ -108,5 +108,9 @@ document.querySelector("#try-button").addEventListener("click", () => {
 });
 
 
-const startButton = document.querySelector("")
-const statMenu = document.querySelector("")
+const startButton = document.querySelector("#home-button")
+const startMenu = document.querySelector("#start-menu")
+
+startButton.addEventListener("click", () => {
+    startMenu.hidden = !startMenu.hidden;
+})
