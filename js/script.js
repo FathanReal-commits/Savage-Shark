@@ -10,11 +10,8 @@ const desktop = document.querySelector(".desktop");
 function mulaiSistem() {
     
     document.querySelector(".selection-screen").hidden = true;
-
- 
     pancingIzinSuara();
 
-  
     playprogram();
 }
 
@@ -64,17 +61,17 @@ function playprogram() {
             clearInterval(bootTimer);
             bootmessage.textContent = "Welcome to Savage Shark!";
 
-            // Transisi pergantian layar setelah booting selesai
+          
             setTimeout(() => {
                 bootScreen.classList.add("boot-finished");
 
                 setTimeout(() => {
                     bootScreen.hidden = true;
                     
-                    // MEMUNCULKAN SECTION VIDEO
+                 
                     document.querySelector("#video-screen").hidden = false;
 
-                    // EKSEKUSI UTAMA: Video baru benar-benar diputar dari awal di section-nya sendiri
+                   
                     const media = document.getElementById('myMedia');
                     media.play().catch(err => {
                         console.log("Gagal memutar video di akhir:", err);
@@ -90,7 +87,7 @@ function playprogram() {
 const media = document.querySelector("#myMedia");
 const videoScreen = document.querySelector("#video-screen");
 
-// When the intro video finishes
+
 
 media.addEventListener("ended", () => {
     media.pause();
@@ -101,7 +98,7 @@ media.addEventListener("ended", () => {
 });
 
 
-// Event listener untuk tombol di menu startup
+
 document.querySelector("#try-button").addEventListener("click", () => {
     startupMenu.hidden = true;
     desktop.hidden = false;
@@ -114,3 +111,13 @@ const startMenu = document.querySelector("#start-menu")
 startButton.addEventListener("click", () => {
     startMenu.hidden = !startMenu.hidden;
 })
+
+const App1 = document.querySelector("#troubleshoot-app")
+const troubleshoot = document.querySelector("#troubelshoot-window")
+
+App1.addEventListener("click", () => {
+    troubleshoot.hidden = !troubleshoot.hidden;
+})
+
+
+
