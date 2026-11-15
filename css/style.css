@@ -1,8 +1,6 @@
-@import "7.css/dist/7.css";
-
 .body {
     font-family: sans-serif;
-    margin: 0%;
+    margin: 0;
 }
 
 .s-nav {
@@ -93,9 +91,9 @@
 
     place-items: center;
     inset: 0;
-    
+
     display: grid;
-    background-image: url(/assets/DSCN2818.JPG);
+    background-image: url(/assets/wallpaper1.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,13 +138,14 @@
 
 .desktop {
     position: fixed;
-    background-image: url(/assets/DSCN2818.JPG);
+    background-image: url(/assets/wallpaper1.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     margin: 0;
+    inset: 0;
 }
 
 .taskbar {
@@ -169,7 +168,7 @@
     background-color: #00000060;
 
     color: #f7f7f8;
-    
+
     right: 0px;
     height: 100%;
 }
@@ -181,7 +180,7 @@
 .start-menu {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
-     display: flex;
+    display: flex;
     bottom: 40px;
     left: 0px;
     width: 580px;
@@ -190,13 +189,13 @@
     color: rgb(255, 255, 255);
     z-index: 100;
     border-radius: 10px;
-        backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(10px);
-   
+
 }
 
 .start-menu-1 {
-    display: block;
+
     background-color: #00000081;
     padding: 5px;
     align-items: center;
@@ -205,16 +204,32 @@
 }
 
 .start-menu-1 img {
-   width: 20%; height: auto;
+    width: 40%;
+    height: auto;
+    display: block;
 
+}
+
+.start-menu-1 ul {
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.start-menu-1 li {
+    border: 1px solid #000;
+    background-color: #006eff;
+    padding: 5px 30px;
 
 }
 
 .taskbar-menu-apps {
     margin-left: 20px;
-        display: block;
+    display: block;
     background-color: #fafaf6f8;
     padding: 5px;
     align-items: center;
     border-radius: 10px;
 }
+
+.taskbar-menu-apps li {}
