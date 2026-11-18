@@ -40,22 +40,7 @@ The project is built with HTML, CSS, and JavaScript, without an application fram
 ### Libraries and technologies
 
 - **HTML, CSS, and JavaScript** — the project's core technologies; no JavaScript framework is used.
-- **[7.css](https://github.com/khang-nd/7.css)** — a Windows 7-inspired CSS library imported by `css/style.css`.
-- **[@frutiger.js/core](https://www.npmjs.com/package/@frutiger.js/core)** — listed as an npm dependency, but not currently imported or used by the page.
-
-### Run the project
-
-Make sure Node.js and npm are installed. From the project directory, install dependencies:
-
-```bash
-npm install
-```
-
-Start a local web server from the same directory. For example, with Python:
-
-```bash
-python -m http.server 8000
-```
+- *.
 
 Open [http://localhost:8000](http://localhost:8000) in a browser. If `python` is unavailable, use `python3 -m http.server 8000`. You can also use a local server extension such as Live Server in Visual Studio Code.
 
